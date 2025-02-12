@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">REGISTRAČNÍ FORMULÁŘ</h1>
+    <p id="description">Děkujeme za registraci do hokejové PS5 ligy</p>
+
+    <form method="post" id="survey-form" action="https://formspree.io/f/xeoellzj">
+        <fieldset>
+            <label for="name" id="name-label">Jméno</label>
+                <input type="text" id="name" name="name" placeholder="Jméno" required>
+
+            <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+
+            <label for="age" id="number-label">Věk</label>
+                <input type="number" id="number" name="age" min="15" max="69" placeholder="Věk" required>         
+        </fieldset>
+        <fieldset>
+            <label for="dropdown">Jak jsi zkušený hráč NHL?</label>
+                <select id="dropdown" name="dropdown">
+                    <option value="">(vyber jednu možnost)</option>
+                    <option value="1">Začátečník</option>
+                    <option value="2">Pokročilý</option>
+                    <option value="3">Profesionál</option> 
+                 </select>
+                 <label for="klub">Jaký je tvůj oblíbený klub NHL?</label>
+                 <select id="klub" name="klub">
+                    <option value="">(vyber jeden tým)</option>
+                    <option value="1">Anaheim Ducks</option>
+                    <option value="2">Arizona Coyotes</option>
+                    <option value="3">Boston Bruins</option>
+                    <option value="4">Buffalo Sabres</option>
+                    <option value="5">Calgary Flames</option>
+                    <option value="6">Carolina Hurricanes</option>
+                    <option value="7">Chicago Blackhawks</option>
+                    <option value="8">Colorado Avalanche</option>
+                    <option value="9">Columbus Blue Jackets</option>
+                    <option value="10">Dallas Stars</option>
+                    <option value="11">Detroit Red Wings</option>
+                    <option value="12">Edmonton Oilers</option>
+                    <option value="13">Florida Panthers</option>
+                    <option value="14">Los Angeles Kings</option>
+                    <option value="15">Minnesota Wild</option>
+                    <option value="16">Montreal Canadiens</option>
+                    <option value="17">Nashville Predators</option>
+                    <option value="18">New Jersey Devils</option>
+                    <option value="19">New York Islanders</option>
+                    <option value="20">New York Rangers</option>
+                    <option value="21">Ottawa Senators</option>
+                    <option value="22">Philadelphia Flyers</option>
+                    <option value="23">Pittsburgh Penguins</option>
+                    <option value="24">San Jose Sharks</option>
+                    <option value="25">Seattle Kraken</option>
+                    <option value="26">St. Louis Blues</option>
+                    <option value="27">Tampa Bay Lightning</option>
+                    <option value="28">Toronto Maple Leafs</option>
+                    <option value="29">Vancouver Canucks</option>
+                    <option value="30">Vegas Golden Knights</option>
+                    <option value="31">Washington Capitals</option>
+                    <option value="32">Winnipeg Jets</option> 
+                  </select>
+        </fieldset>
+        <fieldset>
+            <legend>Hrál jsi někdy online ligu?</legend>
+                <label for="play-yes" class="label-chc">
+                    <input type="radio" name="play-online" id="play-yes" value="ano"> Ano
+                </label>
+                <label for="play-no" class="label-chc">
+                    <input type="radio" name="play-online" id="play-no" value="ne"> Ne
+                </label>
+        </fieldset>
+        <fieldset>
+            <legend>Odkud ses o nás dozvěděl?</legend> 
+                <label for="facebook" class="label-chc"><input type="checkbox" name="information" value="facebook">Facebook</label>
+                <label for="tv" class="label-chc"><input type="checkbox" name="information" value="tv">TV</label>
+                <label for="yt" class="label-chc"><input type="checkbox" name="information" value="yt">Youtube</label>
+                <label for="friend" class="label-chc"><input type="checkbox" name="information" value="friend">Kamarád</label>            
+        </fieldset>        
+        <label for="bio">Napiš něco o sobě</label><textarea name="bio" id="bio" placeholder="Napiš něco o sobě" rows="4"></textarea>  
+        <input type="submit" id="submit" value="Odeslat"> 
+    </form>
+
+</body>
+</html>
