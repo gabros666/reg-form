@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">REGISTRAČNÍ FORMULÁŘ</h1>
+    <p id="description">Děkujeme za registraci do hokejové PS5 ligy</p>
+
+    <form method="post" id="survey-form" action="https://formspree.io/f/xeoellzj">
+        <fieldset>
+            <label for="name" id="name-label">Jméno</label>
+                <input type="text" id="name" name="name" placeholder="Jméno" required>
+
+            <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+
+            <label for="age" id="number-label">Věk</label>
+                <input type="number" id="number" name="age" min="15" max="69" placeholder="Věk" required>         
+        </fieldset>
+        <fieldset>
+            <label for="dropdown">Jak jsi zkušený hráč NHL?</label>
+                <select id="dropdown" name="dropdown">
+                    <option value="">(vyber jednu možnost)</option>
+                    <option value="1">Začátečník</option>
+                    <option value="2">Pokročilý</option>
+                    <option value="3">Profesionál</option> 
+                 </select>
+        </fieldset>
+        <fieldset>
+            <legend>Hrál jsi někdy online ligu?</legend>
+                <label for="play-yes">
+                    <input type="radio" name="play-online" id="play-yes" value="ano"> Ano
+                </label>
+                <label for="play-no">
+                    <input type="radio" name="play-online" id="play-no" value="ne"> Ne
+                </label>
+        </fieldset>
+        <fieldset>
+            <legend>Odkud ses o nás dozvěděl?</legend> 
+                <label for="facebook"><input type="checkbox" name="information" value="facebook">Facebook</label>
+                <label for="tv"><input type="checkbox" name="information" value="tv">TV</label>
+                <label for="yt"><input type="checkbox" name="information" value="yt">Youtube</label>
+                <label for="friend"><input type="checkbox" name="information" value="friend">Kamarád</label>            
+        </fieldset>        
+        <label for="bio">Napiš něco o sobě</label><textarea name="bio" id="bio" placeholder="Napiš něco o sobě" rows="4"></textarea>  
+        <input type="submit" id="submit" value="Odeslat"> 
+    </form>
+
+</body>
+</html>
