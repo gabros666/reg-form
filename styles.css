@@ -33,7 +33,7 @@ label {
     display: flex;
     font-weight: bold;  
     align-items: center; 
-    gap: 8px;
+    gap: 5px;
 }
 
 legend {
@@ -51,6 +51,7 @@ input, select, textarea {
     border: 1px solid #ccc;
     border-radius: 5px;
     outline: none;
+    box-sizing: border-box;
 }
 
 textarea{
