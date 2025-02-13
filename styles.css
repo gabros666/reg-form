@@ -7,6 +7,9 @@ body {
     /*background: linear-gradient(45deg,#F4D03F, #16A085);   */
     background-image: url('img/nhl.jpg');
     background-size: cover; /* Zajistí, že obrázek pokryje celé pozadí */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     }
 
 h1, p {
